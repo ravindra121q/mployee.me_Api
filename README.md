@@ -11,9 +11,11 @@ This project implements a User Sign-Up and Post Management API that allows users
   - [Installation](#installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
+- [Testing with Postman](#testing-with-postman)
+- [Deployed Version](#deployed-version)
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Getting Started
 
@@ -68,7 +70,7 @@ Your User Sign-Up and Post Management API should now be up and running.
 
 ## Usage
 
-Describe how to use your API here. Provide examples of API requests and responses.
+Use Api with the Give End Points
 
 ## API Endpoints
 
@@ -97,6 +99,16 @@ Describe how to use your API here. Provide examples of API requests and response
    - Request Params:
      - `userId` (string): The ID of the user whose posts are to be fetched.
    - Response: 200 OK (All the posts from the user)
+
+## Testing with Postman
+
+To test the API, you can use Postman with the following deployed link:
+
+- **Postman Testing Link**: [https://zealous-pink-donkey.cyclic.app](https://zealous-pink-donkey.cyclic.app)
+
+## Deployed Version
+
+You can access the deployed version of this API at [https://zealous-pink-donkey.cyclic.app/EndPoints](https://zealous-pink-donkey.cyclic.app).
 
 ## Technologies Used
 
