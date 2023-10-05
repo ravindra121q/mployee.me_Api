@@ -37,18 +37,21 @@ router.post("/posts", async (req, res) => {
   }
 });
 
-router.post("/deletepost/:postId", async (req, res) => {
+router.delete("/deletepost/:postId", async (req, res) => {
   const { postId } = req.params;
+  postIdExists = await postModel.findOne({ _id: postId });
+
   try {
-    postIdExists = await postModel.findOne({ _id: postId });
     if (postIdExists) {
       await postModel.findByIdAndDelete(postId);
-      return res.send(200).send("Successful post deletion");
+      return res.status(200).send("Successful post deletion" );
     } else {
-      res.send(200).send("PostID Not Exists");
+      return res.status(404).send("PostID Not Found");
     }
   } catch (error) {
-    res.status(400).send(error);
+    return res
+      .status(500)
+      .json({ message: "Internal Server Error", error: error.message });
   }
 });
 
