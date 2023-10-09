@@ -115,8 +115,7 @@ You can access the deployed version of this API at [https://zealous-pink-donkey.
 - Node.js
 - Express.js
 - MongoDB
-- React.js (if applicable)
-- Other libraries and dependencies (list them here)
+
 
 ## Contributing
 
